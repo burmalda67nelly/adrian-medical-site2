@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M.O.H. — Adrian's Birthday Dossier</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="hero" id="top">
+    <p class="eyebrow">REPUBLIC OF MOLDOVA / MINISTRY OF HEALTH</p>
+    <p class="eyebrow">CONFIDENTIAL PERSONNEL FILE № A-001</p>
+    <h1>THE ADRIAN<br><em>PROTOCOL.</em></h1>
+    <p>A highly unofficial investigation into one medical student and an unreasonable amount of confidence.</p>
+    <a class="button button-lime" href="#dossier">OPEN THE DOSSIER ↘</a>
+    <button class="button button-ghost" id="topSecretBtn" type="button">CLASSIFIED INFO ↗</button>
+  </header>
+
+  <main>
+    <section class="section dossier-section" id="dossier">
+      <p class="eyebrow">01 / SUBJECT PROFILE</p>
+      <h2>THE FILE IS <em>OPEN.</em></h2>
+      <div class="dossier-grid">
+        <div>
+          <h3>Adrian</h3>
+          <p>Future doctor. Present-day menace. A person of considerable potential and questionable levels of chill.</p>
+          <p><strong>ORIGIN:</strong> Republic of Moldova</p>
+          <p><strong>PROFESSION:</strong> Doctor in progress</p>
+          <p><strong>THREAT LEVEL:</strong> Charismatic</p>
+          <p><strong>KNOWN WEAKNESS:</strong> Unknown. Subject denies having any.</p>
+        </div>
+        <div class="gallery">
+          <img src="photos/adrian-main.jpg" alt="Adrian">
+          <img src="photos/adrian-02.jpg" alt="Adrian — exhibit 02">
+          <img src="photos/adrian-03.jpg" alt="Adrian — exhibit 03">
+          <img src="photos/adrian-04.jpg" alt="Adrian — exhibit 04">
+        </div>
+      </div>
+    </section>
+
+    <section class="section interactive-section" id="diagnosis">
+      <p class="eyebrow">02 / CLINICAL DEPARTMENT</p>
+      <h2>WHAT'S THE <em>DIAGNOSIS?</em></h2>
+      <div class="interactive-card">
+        <p class="eyebrow">PRELIMINARY ASSESSMENT</p>
+        <h3 id="diagnosisTitle">Diagnosis not yet established.</h3>
+        <p id="diagnosisDescription">The Ministry is waiting for the subject to do something suspicious.</p>
+        <button class="button button-lime" id="diagnosisBtn" type="button">RUN DIAGNOSTICS ↗</button>
+      </div>
+    </section>
+
+    <section class="section emergency-section" id="emergency">
+      <p class="eyebrow">03 / INCIDENT RESPONSE</p>
+      <h2>IT'S A MEDICAL <em>EMERGENCY.</em></h2>
+      <p>Highly realistic scenarios. More or less.</p>
+      <button class="button button-light" id="emergencyBtn" type="button">SIMULATE AN INCIDENT ↗</button>
+      <div class="interactive-card">
+        <p class="eyebrow">LIVE INCIDENT REPORT</p>
+        <h3 id="emergencyTitle">Awaiting dispatch…</h3>
+        <p id="emergencyDescription">Press the button to receive an urgent and entirely unofficial situation report.</p>
+      </div>
+    </section>
+
+    <section class="section career-section" id="career">
+      <p class="eyebrow">04 / GOVERNMENT APPOINTMENTS</p>
+      <h2>A PROMISING <em>CAREER.</em></h2>
+      <div class="interactive-card">
+        <p class="eyebrow">NOTICE OF APPOINTMENT</p>
+        <h3 id="careerTitle">Minister of Good Decisions</h3>
+        <p id="careerDescription">Appointment pending. The committee has received several concerns regarding the candidate's decision-making history.</p>
+        <button class="button button-dark" id="careerBtn" type="button">ISSUE NEW APPOINTMENT ↻</button>
+      </div>
+    </section>
+
+    <section class="section final-section" id="final">
+      <p class="eyebrow">05 / FINAL REVIEW</p>
+      <h2>ONE LAST <em>ASSESSMENT.</em></h2>
+      <p>After reviewing the evidence and consulting absolutely nobody, the Ministry is ready to issue its final statement.</p>
+      <button class="button button-lime" id="finalBtn" type="button">REVEAL THE VERDICT ↗</button>
+      <div class="interactive-card" id="finalResult" hidden><p class="eyebrow">OFFICIAL MINISTRY VERDICT</p>
+        <h3 id="finalTitle">CERTIFIED NATIONAL TREASURE</h3>
+        <p id="finalDescription">The Ministry confirms that Adrian is an excellent human being.</p>
+      </div>
+      <h3>HAPPY BIRTHDAY, ADRIAN.</h3>
+      <p class="eyebrow">THIS DOCUMENT IS UNOFFICIAL. THE COMPLIMENTS ARE NOT.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>M.O.H. — MINISTRY OF HEALTH</span>
+    <a href="#top">BACK TO TOP ↑</a>
+    <span>© <span id="year"></span></span>
+  </footer>
+
+  <dialog id="secretDialog">
+    <button id="closeDialogBtn" type="button" aria-label="Close">×</button>
+    <p class="eyebrow">CLASSIFIED / LEVEL 01</p>
+    <h2>THE MINISTRY <em>KNOWS.</em></h2>
+    <p>Adrian has been identified as a person of exceptional birthday importance. Any attempt to downplay this finding will be treated as administrative misconduct.</p>
+  </dialog>
+</body>
+</html>
